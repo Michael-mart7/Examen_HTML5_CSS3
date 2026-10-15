@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="body">
+    <main class="main">
+        <section id="matricula">
+            <h1 class="h1"> Agencia de conducción</h1>
+            <p class="p"> Formulario de Matrícula</p>
+
+            <form class="form"  action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input class="input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Número de teléfono</label>
+                    <input class="input" type="tel" id="telefono" name="telefono" autocoomplete="tel" placeholder= "Escreibe tu número de teléfono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Escriba su correo electrónico por favor</label>
+                    <input class="input" type="email" id="email" name="email" inputmode="tel" placeholder="correo@gmail.com required">
+                </div>
+
+                <div class="campo">
+                    <label for="curso-">Tipo de curso </label>
+                    <select class="select" id="curso" name="curso" required>
+                        <option value="">Selecciona un curso</option>
+                        <option value="carro">Carro</option>
+                        <option value="moto">Moto</option>
+                        <option value="mixto">Mixto</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <lablel for="mensaje">Mensaje o comentario</lablel>
+                    <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Escribe un comentario" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Enviar Matrícula</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

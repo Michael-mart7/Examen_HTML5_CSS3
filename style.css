@@ -1,0 +1,123 @@
+:root {
+    --color-principal: rgb(128, 0, 11);
+    --color-fondo: rgba(223, 210, 253, 0.708);
+    --color-borde: blue;
+    --color-texto: black;
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+    background: var(--color-fondo);
+}
+
+.form{
+    display: grid;
+    gap: 16px;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    color: var(--color-principal)
+}
+
+.p{
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--color-principal);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: px solid var(--color-principal);
+    outline-offset: 1px;
+}
+
+button{
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-principal);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(43, 116, 226);
+    box-shadow: 0 3px 8px red;
+}
+
+#matricula{
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rebeccapurple;
+    animation: aparecer 0.6s ease;
+}
+
+@media (max-width: 600px) {
+    main{
+        padding: 7px;
+    }
+    form{
+        gap: 10px;
+    }
+    #matricula{
+        padding: 20px;
+        border-radius: 8px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    input, select, textarea{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #matricula{
+        width: 100%;
+        max-width: 700px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 22px;
+    }
+
+}
